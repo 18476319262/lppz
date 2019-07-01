@@ -1,0 +1,154 @@
+/*bootstrap*/
+.dropdown .dropdown-menu{
+    display: block;
+    opacity: 0;
+
+    -moz-transition:    all 1000ms ease;
+    -webkit-transition: all 1000ms ease;
+    -o-transition:      all 1000ms ease;
+    -ms-transition:     all 1000ms ease;
+    transition:         all 1000ms ease;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+/*整体样式*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+html,body,section{
+	width: 100%;
+	height: 100%;
+}
+body{
+	overflow: hidden;
+}
+/*点击导航栏字体变色*/
+.own li:nth-of-type(1) a:hover{
+	color: black;
+}
+.own li:nth-of-type(2) a:hover{
+	color: black;
+}
+.own li:nth-of-type(3) a:hover{
+	color: black;
+}
+.own li:nth-of-type(4) a:hover{
+	color: black;
+}
+.own li:nth-of-type(5) a:hover{
+	color: black;
+}
+.own li:nth-of-type(6) a:hover{
+	color: black;
+}
+/*selection屏幕切换区样式*/
+section{
+	position: relative;
+	top: 280px;
+}
+section>div{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+section .screen1{
+	/*background: red;*/
+	background-size: 100% 100%;
+}
+section .screen2{
+	/*background: orange;*/
+	background-size: 100% 100%;
+}
+section .screen3{
+	/*background: yellow;*/
+	background-size: 100% 100%;
+}
+section .screen4{
+	/*background: blue;*/
+	background-size: 100% 100%;
+}
+/*屏幕右侧的播放切换效果*/
+.side{
+	position: fixed;
+	top: 50%;
+	z-index: 1;
+	right: 20px;
+	margin-top: -117px;
+}
+.side li{
+	width: 20px;
+	height: 20px;
+	border: 1px solid red;
+	border-radius: 50%;
+	margin: 10px;
+	cursor: pointer;
+}
+.side .current{
+	background:red;
+	border: none;
+	width: 20px;
+	height: 20px;
+}
+/*logo图片*/
+#A{
+	width: 135px;
+	height: 46px;
+	padding-bottom: 20px;
+}
+/*屏2字体,图片,盒子里面的字体,*/
+.s2font01{
+	color: white;
+}
+.s2img01{
+	position: relative;
+	left: 100px;
+}
+.s2img02{
+	position: relative;
+	left: 30px;
+}
+.s2box01{
+	background: #e1251b;
+	position: relative;
+	bottom: 160px;
+	left: 30px;
+}
+.s2box02{
+	background: #e1251b;
+	position: relative;
+	bottom: 160px;
+	left: 280px;
+}
+/*屏3字体,图片,点击*/
+.s3font01{
+	color: red;
+}
+.s3simg01{
+	width:287px;
+	height: 60px; 
+	display: none;
+	position: relative;
+	left: 15px;
+	bottom: 60px;
+}
+.s3bimg01{
+	width: 287px;
+	height: 371px;
+}
+.hover01:hover .s3simg01{
+	display: block;
+}
+/*屏4盒子,点击*/
+.s4box01{
+	background: #f2f2f2;
+	border-radius: 5px;
+}
+.s4box01:hover{
+	background: red;
+	color: white;
+}
